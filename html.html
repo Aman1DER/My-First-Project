@@ -13,7 +13,10 @@
         background-color: rgb(0, 255, 102);
         opacity: 1;
       }
-.buy-now:hover {
+      .order:hover {
+        box-shadow: 10px 5px 10px rgba(16, 16, 16, 0.3);
+      }
+      .buy-now:hover {
         background-color: rgb(12, 10, 10);
         color: rgb(255, 183, 0);
         opacity: 0.7;
@@ -31,6 +34,7 @@
         font-size: medium;
         cursor: pointer;
         margin-right: 10px;
+        transition: opacity 0.15s;
       }
       .price {
         color: green;
@@ -48,8 +52,11 @@
         width: 200px;
         font-family: Arial, Helvetica, sans-serif;
         font-style: bold;
-       font-size: medium;
-        cursor: pointer; 
+        font-size: medium;
+        cursor: pointer;
+        transition:
+          opacity 1s,
+          color 1s;
       }
       .order {
         background-color: rgb(0, 238, 255);
@@ -63,6 +70,7 @@
         font-style: bold;
         font-size: medium;
         cursor: pointer;
+        transition: box-shadow 0.5s;
       }
     </style>
   </head>
