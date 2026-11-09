@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      p {
+        font-family: "Roboto", arial;
+        margin-top: 0;
+        margin-bottom: 0;
+  
+      }
       .image1,
       .image2 {
         width: 300px;
@@ -14,7 +26,6 @@
         display: block;
       }
 
-      .video-preview,
       .video-preview {
         display: inline-block;
         vertical-align: top;
@@ -22,7 +33,37 @@
       }
 
       .video-title {
-        width: 300px;
+        margin: 0;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    
+      }
+      .channel-pic {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+      .video-info {
+        display: inline-block;
+        width: 200px;
+      }
+      .profile-picture {
+        width: 40px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .thumbnail-row {
+        margin-bottom: 12px;
+      }
+      .video-author,
+      .video-stats {
+        color: rgb(96, 96, 96);
+        font-size: 12px;
+      }
+      .video-author {
+        margin-bottom: 4px;
       }
     </style>
   </head>
@@ -30,24 +71,36 @@
     <input class="search-bar" type="text" placeholder="Search" />
 
     <div class="video-preview">
-      <div>
+      <div class="thumbnail-row">
         <img class="image1" src="photos/thumbnail-1.webp" alt="" />
       </div>
-      <div>
-        <img src="channel-pics/channel-1.jpeg" alt="" />
-        <p class="video-title">
-          The missing puppy is here waiting for you to be taken so here we go
-        </p>
-        <p>Andrew Matt</p>
-        <p>3.4M views &#183; 6 Months ago</p>
+      <div class="channel-pic">
+        <img class="profile-picture" src="channel-pics/channel-1.jpeg" alt="" />
       </div>
+      <div class="video-info">
+        <p class="video-title">
+          The missing puppy is here waiting for you to be adopted.
+        </p>
+        <p class="video-author">Andrew Matt</p>
+        <p class="video-stats">3.4M views &#183; 6 Months ago</p>
+      </div>
+      <div></div>
     </div>
     <div class="video-preview">
-      <img class="image2" src="photos/thumbnail-2.webp" alt="" />
-
-      <p class="video-title">Another puppy</p>
-      <p>Jackson Nash</p>
-      <p>7.8M views &#183; 12 Months ago</p>
+      <div class="thumbnail-row">
+        <img class="image1" src="photos/thumbnail-2.webp" alt="" />
+      </div>
+      <div class="channel-pic">
+        <img class="profile-picture" src="channel-pics/channel-2.jpeg" alt="" />
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          The missing puppy is here waiting for you to be adopted.
+        </p>
+        <p class="video-author">Andrew Matt</p>
+        <p class="video-stats">3.4M views &#183; 6 Months ago</p>
+      </div>
+      <div></div>
     </div>
   </body>
 </html>
