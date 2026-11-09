@@ -5,43 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .image1 {
+      .image1,
+      .image2 {
         width: 300px;
       }
 
       .search-bar {
-        width: 300px;
-        padding: 10px;
         display: block;
-        border: 1px solid #ccc;
-      }
-      .video-preview {
-        display: inline-block;
       }
 
-      .image2 {
-        width: 300px;
-      }
-      div {
+      .video-preview,
+      .video-preview {
         display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      .video-title {
+        width: 300px;
       }
     </style>
   </head>
   <body>
+    <input class="search-bar" type="text" placeholder="Search" />
     <div class="video-preview">
-      <input class="search-bar" type="text" placeholder="Search" />
       <img class="image1" src="photos/banner-puppies - Copy.jpg" alt="" />
 
-      <p>The missing puppy</p>
+      <p class="video-title">
+        The missing puppy is here waiting for you to be taken so here we go
+      </p>
       <p>Andrew Matt</p>
       <p>3.4M views &#183; 6 Months ago</p>
     </div>
-    <div>
+    <div class="video-preview">
       <img class="image2" src="photos/banner-puppies.jpg" alt="" />
 
-      <p>The missing puppy</p>
-      <p>Andrew Matt</p>
-      <p>3.4M views &#183; 6 Months ago</p>
+      <p class="video-title">Another puppy</p>
+      <p>Jackson Nash</p>
+      <p>7.8M views &#183; 12 Months ago</p>
     </div>
   </body>
 </html>
